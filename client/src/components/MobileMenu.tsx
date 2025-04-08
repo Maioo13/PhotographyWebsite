@@ -60,6 +60,16 @@ const MobileMenu = ({ isOpen, toggleMobileMenu }: MobileMenuProps) => {
                 Contact
               </a>
             </Link>
+            <Link href="/privacy-policy">
+              <a 
+                className={`hover:text-[#E0E0E0] transition-colors duration-300 ${
+                  location === '/privacy-policy' ? 'text-[#E0E0E0]' : 'text-light'
+                }`}
+                onClick={toggleMobileMenu}
+              >
+                Privacy Policy
+              </a>
+            </Link>
           </nav>
         </motion.div>
       )}

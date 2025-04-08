@@ -24,7 +24,7 @@ const Footer = () => {
             <Link href="/contact">
               <a className="text-light hover:text-[#E0E0E0] transition-colors duration-300">Contact</a>
             </Link>
-            <Link href="#">
+            <Link href="/privacy-policy">
               <a className="text-light hover:text-[#E0E0E0] transition-colors duration-300">Privacy Policy</a>
             </Link>
           </div>
