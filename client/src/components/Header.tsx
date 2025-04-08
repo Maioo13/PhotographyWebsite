@@ -36,34 +36,38 @@ const Header = ({ isMobileMenuOpen, toggleMobileMenu }: HeaderProps) => {
         transition={{ duration: 0.5 }}
       >
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <Link href="/">
-            <a className="text-2xl font-condensed font-bold tracking-wider text-light">
-              LENS<span className="text-[#E0E0E0]">CRAFT</span>
-            </a>
+          <Link 
+            href="/" 
+            className="text-2xl font-condensed font-bold tracking-wider text-light"
+          >
+            LENS<span className="text-[#E0E0E0]">CRAFT</span>
           </Link>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-wider">
-            <Link href="/">
-              <a className={`hover:text-[#E0E0E0] transition-colors duration-300 ${
+            <Link 
+              href="/" 
+              className={`hover:text-[#E0E0E0] transition-colors duration-300 ${
                 location === '/' ? 'text-[#E0E0E0]' : 'text-light'
-              }`}>
-                Portfolio
-              </a>
+              }`}
+            >
+              Portfolio
             </Link>
-            <Link href="/about">
-              <a className={`hover:text-[#E0E0E0] transition-colors duration-300 ${
+            <Link 
+              href="/about" 
+              className={`hover:text-[#E0E0E0] transition-colors duration-300 ${
                 location === '/about' ? 'text-[#E0E0E0]' : 'text-light'
-              }`}>
-                About
-              </a>
+              }`}
+            >
+              About
             </Link>
-            <Link href="/contact">
-              <a className={`hover:text-[#E0E0E0] transition-colors duration-300 ${
+            <Link 
+              href="/contact" 
+              className={`hover:text-[#E0E0E0] transition-colors duration-300 ${
                 location === '/contact' ? 'text-[#E0E0E0]' : 'text-light'
-              }`}>
-                Contact
-              </a>
+              }`}
+            >
+              Contact
             </Link>
           </nav>
           

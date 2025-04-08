@@ -30,45 +30,41 @@ const MobileMenu = ({ isOpen, toggleMobileMenu }: MobileMenuProps) => {
           </button>
           
           <nav className="flex flex-col space-y-6 text-base font-medium uppercase tracking-wider">
-            <Link href="/">
-              <a 
-                className={`hover:text-[#E0E0E0] transition-colors duration-300 ${
-                  location === '/' ? 'text-[#E0E0E0]' : 'text-light'
-                }`}
-                onClick={toggleMobileMenu}
-              >
-                Portfolio
-              </a>
+            <Link 
+              href="/"
+              className={`hover:text-[#E0E0E0] transition-colors duration-300 ${
+                location === '/' ? 'text-[#E0E0E0]' : 'text-light'
+              }`}
+              onClick={toggleMobileMenu}
+            >
+              Portfolio
             </Link>
-            <Link href="/about">
-              <a 
-                className={`hover:text-[#E0E0E0] transition-colors duration-300 ${
-                  location === '/about' ? 'text-[#E0E0E0]' : 'text-light'
-                }`}
-                onClick={toggleMobileMenu}
-              >
-                About
-              </a>
+            <Link 
+              href="/about"
+              className={`hover:text-[#E0E0E0] transition-colors duration-300 ${
+                location === '/about' ? 'text-[#E0E0E0]' : 'text-light'
+              }`}
+              onClick={toggleMobileMenu}
+            >
+              About
             </Link>
-            <Link href="/contact">
-              <a 
-                className={`hover:text-[#E0E0E0] transition-colors duration-300 ${
-                  location === '/contact' ? 'text-[#E0E0E0]' : 'text-light'
-                }`}
-                onClick={toggleMobileMenu}
-              >
-                Contact
-              </a>
+            <Link 
+              href="/contact"
+              className={`hover:text-[#E0E0E0] transition-colors duration-300 ${
+                location === '/contact' ? 'text-[#E0E0E0]' : 'text-light'
+              }`}
+              onClick={toggleMobileMenu}
+            >
+              Contact
             </Link>
-            <Link href="/privacy-policy">
-              <a 
-                className={`hover:text-[#E0E0E0] transition-colors duration-300 ${
-                  location === '/privacy-policy' ? 'text-[#E0E0E0]' : 'text-light'
-                }`}
-                onClick={toggleMobileMenu}
-              >
-                Privacy Policy
-              </a>
+            <Link 
+              href="/privacy-policy"
+              className={`hover:text-[#E0E0E0] transition-colors duration-300 ${
+                location === '/privacy-policy' ? 'text-[#E0E0E0]' : 'text-light'
+              }`}
+              onClick={toggleMobileMenu}
+            >
+              Privacy Policy
             </Link>
           </nav>
         </motion.div>
